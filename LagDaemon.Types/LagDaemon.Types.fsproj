@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="EmailAddress.fsi" />
+    <Compile Include="EmailAddress.fs" />
+    <Compile Include="Identifier.fsi" />
+    <Compile Include="Identifier.fs" />
+    <Compile Include="ResultExtensions.fs" />
+    <Compile Include="StateCode.fsi" />
+    <Compile Include="StateCode.fs" />
+    <Compile Include="TypeStrings.fs" />
+    <Compile Include="WrappedString.fs" />
+    <Compile Include="ZipCode.fsi" />
+    <Compile Include="ZipCode.fs" />
+    <Compile Include="PasswordRules.fsi" />
+    <Compile Include="PasswordRules.fs" />
+    <Compile Include="PasswordHash.fsi" />
+    <Compile Include="PasswordHash.fs" />
+    <Compile Include="Password.fs" />
+    <Compile Include="ContactInfo.fs" />
+    <Compile Include="Program.fs" />
+    <None Include="Script1.fsx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FSharp.Data" Version="3.3.2" />
+    <PackageReference Include="Newtonsoft.Json.FSharp" Version="3.2.2" />
+    <PackageReference Include="PBKDF2.NETCore" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
