@@ -69,6 +69,7 @@ module Password =
             (fun pw -> InvalidPassword (pw, ""))
             pw
 
+    /// hases a password
     let hashPassword pw =
         match pw with
         | ClearPassword clearpw -> ()
