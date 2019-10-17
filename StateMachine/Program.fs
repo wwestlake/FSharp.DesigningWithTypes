@@ -2,24 +2,22 @@
 
 
 open LagDaemon.Types
+open System.Net
+
 
 
 [<EntryPoint>]
 let main argv =
 
-    let passwords = [ 
-        "2"
-        "lame"
-        "lamer"
-        "KLJHkjhwaqihwqed987293784"
-        "NotTooLameBuNotGood"
-        "123456789"
-        "Htrv9Gpl1234!@#$"
-    ]
+    let result = TcpIp.connect "www.google.com" 80
+    match result with
+    | Ok conn -> printfn "%A" conn
+                 printfn "%s" (conn.reader.ReadToEnd())
+                 conn.writer.Write("GET / HTTP/1.1\n\r")
+                 conn.writer.Flush()
+                 printfn "%s" (conn.reader.ReadToEnd())
 
-    printfn "%A" (List.map Password.processPasswordDefault passwords)
-
-    System.Console.ReadKey(true) |> ignore
+    | Error msg -> printfn "%A" msg
 
     0 // return an integer exit code
 

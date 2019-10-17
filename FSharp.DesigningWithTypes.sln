@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "StateMachine", "StateMachine\StateMachine.fsproj", "{3500CFEB-20C3-4586-A027-29B83FE52DB4}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "LagDaemon.Types", "LagDaemon.Types\LagDaemon.Types.fsproj", "{E65E013A-47EB-42CB-A4FD-6DBB2D295C5B}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "LagDaemon.Types", "LagDaemon.Types\LagDaemon.Types.fsproj", "{E65E013A-47EB-42CB-A4FD-6DBB2D295C5B}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "LagDaemon.UnitTests", "LagDaemon.UnitTests\LagDaemon.UnitTests.fsproj", "{A48F030E-5663-4351-9E26-E5B5354DDB40}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{E65E013A-47EB-42CB-A4FD-6DBB2D295C5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E65E013A-47EB-42CB-A4FD-6DBB2D295C5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E65E013A-47EB-42CB-A4FD-6DBB2D295C5B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A48F030E-5663-4351-9E26-E5B5354DDB40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A48F030E-5663-4351-9E26-E5B5354DDB40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A48F030E-5663-4351-9E26-E5B5354DDB40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A48F030E-5663-4351-9E26-E5B5354DDB40}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
